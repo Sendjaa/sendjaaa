@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>Senja_Portfolio</title>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="img/style.css">
+  <link rel="stylesheet" href="assest/css/bootstrap.css">
+  <link rel="stylesheet" href="assest/img/style.css">
   <style>
     body {
       text-decoration: none;
@@ -29,34 +29,33 @@
 <body>
   <nav class="navbar nav  ">
     <div class="container-fluid">
-      <span class="text navbar-brand ms-lg-5 mb-0 h1">Portfolio</span>
+      <span class="text navbar-brand ms-lg-5 mb-0 h1">Portfolio Senja</span>
     </div>
   </nav>
-
-  <!-- hero -->
-
-  <div class="jumbotron h-100">
-    <div class="row g-0 ms-lg-5">
-      <div class="col-sm-2 link-nav col-md-4 col-lg-6">
+  <div class="container-fluid my-lg-5">
+    <div class="row justify-content-between align-items-center g-2 row-cols-1 row-cols-md-2 row-cols-lg-2">
+      <div class="col">
         <ul style="list-style: none; line-height: 100px;">
-          <li><a class="fw-bolder hero-link" href="#about">ABOUT US</a></li>
+          <li><a class="fw-bolder hero-link text-fluid" href="#about">ABOUT US</a></li>
           <li><a class="fw-bolder hero-link" href="#project">PROJECT</a></li>
           <li><a class="fw-bolder hero-link" href="#certificat">CERTIFICAT</a></li>
-          <li><a class="fw-bolder hero-link" href="#">GALLERY</a></li>
+          <li><a class="fw-bolder hero-link" href="#gallery">GALLERY</a></li>
         </ul>
       </div>
-      <div class="col-sm-2 col-md-4 col-lg-6">
-        <img src="img/PROFIL.jpg" width="290" class="img-fluid d-block mb-lg-4" alt="profil">
-        <span class="name-profile fw-bolder">SENJA</span> <br>
-        <span class="text-number">+6289 5091 6248 4</span> <br>
-        <span class="text-email">dewa4388@gmail.com</span>
+        <div class="col ms-auto justify-content-sm-center">
+          <img src="./assest/img/PROFIL.jpg" class="img-fluid d-block ms-5 w-50" alt="profil">
+        </div>
+        <div class="col justify-content-lg-start ms-auto">
+          <span class="name-profile fw-bolder">SENJA</span> <br>
+          <span class="text-number">+62 8950 9162 484</span> <br>
+          <span class="text-email">dewa4388@gmail.com</span>
+        </div>
       </div>
-    </div>
   </div>
 
   <div class="container-fluid" id="about" style="height: 100vh;">
     <h1 class="text-about ms-lg-5 fw-bolder">ABOUT US</h1>
-    <p class="text-about-desk">Saya pribadi yang ramah, jujur, <br>
+    <p class="text-about-desk fs-5">Saya pribadi yang ramah, jujur, <br>
       dan mudah beradtasi dengan orang baru <br>
       dan lingkungan baru, saya mempunyai <br>
       keahlian dengan dunia komputer seperti <br>
@@ -68,10 +67,10 @@
 
   <div class="container-fluid" id="project" style="height: 100vh;">
     <h1 class="text-project ms-lg-5 fw-bolder">PROJECT</h1>
-    <div class="row content-project row-cols-1 row-cols-md-2 g-4">
+    <div class="row content-project row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
       <div class="col">
         <div class="card">
-          <img src="img/Picture2.png" class="card-img-top" alt="...">
+          <img src="assest/img/Picture2.png" class="card-img-top" alt="niket.com">
           <div class="card-body">
             <h5 class="card-title">niket.com</h5>
             <p class="card-text">aplikasi Pemesanan Hotel berbasis Web menggunakan Framework Laravel 8
@@ -81,7 +80,7 @@
       </div>
       <div class="col">
         <div class="card">
-          <img src="img/Screenshot (300).png" class="card-img-top" alt="...">
+          <img src="assest/img/Screenshot (300).png" class="card-img-top" alt="offcial_ratuba">
           <div class="card-body">
             <h5 class="card-title">Official Ratuba</h5>
             <p class="card-text">Website Profil Organisasi Official Ratuba menggunakan Framework Laravel 8 & bootstrap
@@ -106,71 +105,50 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-
-  <div class="container-fluid" id="certificat" style="height: 70vh;">
-    <div class="d-flex">
-      <div class="item-flex w-50">
-        <h1 class="text-sertificat ms-lg-5 fw-bolder">CERTIFICAT</h1>
-        <!-- Trigger the Modal -->
-        <img id="myImg" class="mt-lg-5" src="img/Picture2.png" alt="sertificat pelatihan fullstack node.js SMKCODING"
-          style="width:100%;max-width:300px">
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-
-          <!-- The Close Button -->
-          <span class="close">&times;</span>
-
-          <!-- Modal Content (The Image) -->
-          <img class="modal-content" id="img01">
-
-          <!-- Modal Caption (Image Text) -->
-          <div id="caption"></div>
-        </div>
-      </div>
-      <div class="item-flex w-50">
-        <h1 class="text-sertificat ms-lg-5 fw-bolder">GALLERY</h1>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/Picture1.png" class="w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/Picture2.png" class="w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/Picture3.png" class="w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/Screenshot (300).png" class="w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/Screenshot (302).png" class="w-100" alt="...">
-            </div>
+<!-- 
+<div class="container-fluid py-lg-5 mb-lg-5 my-5" style="height: 70vh;">
+  <div class="row justify-content-center align-items-center g-2 row-cols-1 row-cols-md-2 row-cols-lg-2"> -->
+  <div class="row justify-content-center align-items-center">
+    <div class="col">
+      <h1 class="text-sertificat ms-lg-5 fw-bolder">CERTIFICAT</h1>
+      <div id="carouselExampleControls" class="carousel slide ms-lg-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assest/img/Picture1.png" class="w-100" alt="...">
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="carousel-item">
+            <img src="assest/img/Picture2.png" class="w-100" alt="...">
+          </div>  
+          <div class="carousel-item">
+            <img src="assest/img/Picture3.png" class="w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assest/img/Screenshot (300).png" class="w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assest/img/Screenshot (302).png" class="w-100" alt="...">
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
-
-
-
+    </div>
   </div>
+</div>
+<!--     
+  </div>
+</div> -->
 
 
-
-
-  <footer class="footer" style="height: 40px;">
+  <footer class="footer py-lg-5" style="height: 40px;">
     <div class="container d-flex">
       <h5 class="fw-bold">TEMUI SAYA DI</h5>
       <ul>
@@ -180,9 +158,7 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-  </script>
+  <script src="assest/js/bootstrap.bundle.js"></script>
   <script>
     // Get the modal
     var modal = document.getElementById("myModal");
